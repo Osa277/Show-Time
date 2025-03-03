@@ -1,7 +1,4 @@
-*{
-    /* margin-top: 20px; */
-    text-align: center;
-}
+
 
 h1{
     font-size: 45px;
@@ -16,8 +13,9 @@ body{
 }
 
 .container{
-    width: 50%;
-    height: 400px;
+    width: 90%;
+    max-width: 400px;
+    height: auto;
     margin: auto;
     background: linear-gradient(to right, #ece4e4,#208554) ;
     border: none;
@@ -27,8 +25,10 @@ body{
 }
 
  #analog-clock{
-    width: 250px;
-    height: 250px;
+    width: 60vw;
+    max-width: 250px;
+    max-height: 250px;
+    height:60vw;
     border-radius: 50%;
     border: 6px solid #FFF2AF;
     margin: 30px auto;
@@ -58,7 +58,7 @@ body{
 .hour-11 { top: 20%; left: 30%; }
 .hour-12 { top: 10%; left: 50%; }
 
-.hour-hand-container{
+/* .hour-hand-container{
     width: 9px;
     height: 75px;
     background-color: #F93827;
@@ -115,27 +115,83 @@ body{
     position: absolute;
     top: calc(50% - 6px); 
     left: calc(50% - 6px); 
+} */
+
+
+.hour-hand-container, .minute-hand-container, .second-hand-container {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: bottom center;
+    transform: translateX(-50%) rotate(180deg);
 }
 
-#digital-clock{
+.hour-hand-container {
+    width: 3.6%;
+    height: 30%;
+    background-color: #F93827;
+    border-radius: 1.2%;
+}
+
+.minute-hand-container {
+    width: 2.4%;
+    height: 38%;
+    background-color: #FFD65A;
+    border-radius: 0.8%;
+}
+
+.second-hand-container {
+    width: 1.2%;
+    height: 44%;
+    background-color: #118B50;
+    border-radius: 0.4%;
+}
+
+
+
+#digital-clock {
+    width: 80%;
+    margin: 20px auto 0;
+    padding: 10px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    max-font-size:20px
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#date {
+    margin: 60px auto 0;
+    font-size: 2vw;
+    /* max-font-size: 20px; */
+    font-weight: bold;
+    color: black;
+    font-family: 'Arial', sans-serif;
+}
+
+
+
+/* #digital-clock{
     width: 70%; 
     height: 0px;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 20px; */
     /* border: 2px solid black; */
-    border-radius: 25px;
+    /* border-radius: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 30px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
+} */
 
-#date{
+/* #date{
     margin: auto;
     margin-top: 60px;
     font-size: 20px;
     font-weight: bold;
     color: black;
     font-family: 'Arial', sans-serif;
-}
+} */
