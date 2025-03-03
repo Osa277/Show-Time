@@ -1,0 +1,141 @@
+*{
+    /* margin-top: 20px; */
+    text-align: center;
+}
+
+h1{
+    font-size: 45px;
+    color: white;
+}
+
+body{
+
+    background: linear-gradient(to right, #ece4e4,#208554);
+    font-family: cursive;
+
+}
+
+.container{
+    width: 50%;
+    height: 400px;
+    margin: auto;
+    background: linear-gradient(to right, #ece4e4,#208554) ;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow:#F93827 0px 3px 8px;
+}
+
+ #analog-clock{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 6px solid #FFF2AF;
+    margin: 30px auto;
+    position: relative;
+    box-shadow: #FFF2AF 0px 7px 29px 0px;
+    
+}
+
+.hour{
+    font-weight: bold;
+    font-size: 20px;
+    color: #123524;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.hour-1 { top: 20%; left: 70%; }
+.hour-2 { top: 35%; left: 85%; }
+.hour-3 { top: 50%; left: 90%; }
+.hour-4 { top: 65%; left: 85%; }
+.hour-5 { top: 80%; left: 70%; }
+.hour-6 { top: 90%; left: 50%; }
+.hour-7 { top: 80%; left: 30%; }
+.hour-8 { top: 65%; left: 15%; }
+.hour-9 { top: 50%; left: 10%; }
+.hour-10 { top: 35%; left: 15%; }
+.hour-11 { top: 20%; left: 30%; }
+.hour-12 { top: 10%; left: 50%; }
+
+.hour-hand-container{
+    width: 9px;
+    height: 75px;
+    background-color: #F93827;
+    position: absolute;
+    transform-origin: bottom center;
+    transform: rotate(180deg);
+    border-radius: 3px;
+    top: 50px;
+    left: 122px;
+}   
+
+.hour-hand{
+    position: relative;
+}
+
+.minute-hand-container{
+    width: 6px;
+    height: 95px;
+    background-color: #FFD65A;
+    position: absolute;
+    transform-origin: bottom center;
+    transform: rotate(180deg);
+    border-radius: 2px;
+    top: 30px;
+    left: 123px;
+}   
+
+.minute-hand{
+    position: relative;
+}
+
+.second-hand-container{
+    width: 3px;
+    height: 110px;
+    background-color: #118B50;
+    position: absolute;
+    transform-origin: bottom center;
+    transform: rotate(180deg);
+    border-radius: 1px;
+    top: 14px;
+    left: 124px;
+}   
+
+.second-hand{
+    position: relative;
+}
+
+.point{
+    width: 15px;
+    height: 15px;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 6px); 
+    left: calc(50% - 6px); 
+}
+
+#digital-clock{
+    width: 70%; 
+    height: 0px;
+    margin: auto;
+    margin-top: 20px;
+    /* border: 2px solid black; */
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#date{
+    margin: auto;
+    margin-top: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    font-family: 'Arial', sans-serif;
+}
